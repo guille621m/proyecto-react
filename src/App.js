@@ -1,22 +1,12 @@
-import logo from './img/guitarras.jpg';
 import './App.css';
+import NavBar from './components/NavBar';
+import ItemListContainer from './container/ItemListContainer';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Tienda de Guitarras
-        </a>
-      </header>
-    </div>
-  );
+  return <> 
+    <NavBar />
+    <ItemListContainer greeting="Hola a todos"/>
+  </>
 }
 
 export default App;
